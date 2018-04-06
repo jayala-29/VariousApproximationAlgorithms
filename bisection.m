@@ -3,7 +3,8 @@ function zero = bisection(f, a, b)
   fa = f(a);
   fb = f(b);
   fc = f(c);
-  if (abs(fa * fc) < 1)
+  % state threshold for error reduction
+  if (abs(fa * fc) < 0.00001)
     zero = c;
   elseif (fa * fc < 0)
     zero = bisection(f, a, c);
