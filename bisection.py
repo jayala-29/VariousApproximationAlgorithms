@@ -7,12 +7,13 @@ def evaluate(f, x0):
 def bisection(f, a, b):
   c = (a + b) / 2
   fa = evaluate(f, a)
+  fb = evaluate(f, b)
   fc = evaluate(f, c)
   if (abs(fa * fc) < 1):
     return c
   elif (fa * fc < 0):
     return bisection(f, a, c)
-  elif (fa * fc < 0):
+  elif (fb * fc < 0):
     return bisection(f, c, b)
   return "DNE"
   
