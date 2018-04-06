@@ -15,6 +15,6 @@ function zero = bisection(f, a, b)
   end
 end
 
-% bisection method in matlab
+% Bisection method implemenatation in Matlab
 % PARAMETERS: FUNCTION, INTERVAL START, INTERVAL END
 % sample input: bisection(@(x) 1 / x - atan(x), 0 + 0.00001, pi / 2 - 0.00001)
