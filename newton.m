@@ -1,9 +1,11 @@
 function newton(f, fp, x0, it)
-  for i=0:it-1
-      x1 = x0 - f(x0) / fp(x0);
-      x0 = x1;
-      fprintf('%d %d\n', x0, f(x0));
+  if (it == 0)
+      return;
   end
+  x1 = x0 - f(x0) / fp(x0);
+  x0 = x1;
+  fprintf('%d %d\n', x0, f(x0));
+  newton(f, fp, x0, it - 1);
 end
 
 % Newton's method implementation in Matlab
