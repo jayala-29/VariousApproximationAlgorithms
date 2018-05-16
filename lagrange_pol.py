@@ -11,4 +11,4 @@ def lagrange_pol(p):
 # Lagrange Polynomial Interpolation
 # p_3(x) = 4x^3 + 35x^2 - 84x - 954
 # (x, y): (5, 1); (-7, 23); (-6, -54); (0, -954)
-print (newton_pol([(5,1), (-7, -23), (-6, -54), (0, -954)]))
+print (lagrange_pol([(5,1), (-7, -23), (-6, -54), (0, -954)]))
