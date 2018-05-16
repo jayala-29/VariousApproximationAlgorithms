@@ -26,5 +26,5 @@ function p = newton_pol(x,y)
   end
 end
 
-# INPUT: newton_pol([x1 ... xn], [y1 ... yn])
-# OUTPUT: polynomial coefficients using Divided Differences (Newton's method for polynomials)
+% INPUT: newton_pol([x1 ... xn], [y1 ... yn])
+% OUTPUT: polynomial coefficients using Divided Differences (Newton's method for polynomials)
