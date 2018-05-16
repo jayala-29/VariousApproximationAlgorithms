@@ -33,3 +33,6 @@ function p = lagrange_pol(x, y)
       lp(3) = 1;
   end
 end
+
+% INPUT: newton_pol([x1 ... xn], [y1 ... yn])
+% OUTPUT: polynomial coefficients using Lagrange method
