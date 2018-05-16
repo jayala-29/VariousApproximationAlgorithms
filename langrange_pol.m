@@ -29,8 +29,8 @@ function p = lagrange_pol(x, y)
       end
       p = p + c(i) * y(i) * lp;
       check = 0;
-      lp(1:4) = 0;
-      lp(3) = 1;
+      lp(1:size(x,2)) = 0;
+      lp(size(x,2)-1) = 1;
   end
 end
 
