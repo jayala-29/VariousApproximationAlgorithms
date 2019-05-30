@@ -1,1 +1,1 @@
-# MATH170B
+# Various Approximation Algorithms
